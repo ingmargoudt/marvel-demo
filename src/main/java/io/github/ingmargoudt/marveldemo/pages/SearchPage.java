@@ -1,4 +1,4 @@
-package io.github.ingmargoudt.marveldemo;
+package io.github.ingmargoudt.marveldemo.pages;
 
 import io.github.ingmargoudt.programs.BaseProgram;
 import lombok.Getter;
