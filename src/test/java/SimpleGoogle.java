@@ -1,8 +1,7 @@
-package io.github.ingmargoudt.marveldemo;
-
 import io.github.ingmargoudt.Browser;
 import io.github.ingmargoudt.BrowserName;
 import io.github.ingmargoudt.TestExecution;
+import io.github.ingmargoudt.marveldemo.GoogleTestData;
 import io.github.ingmargoudt.marveldemo.flows.SearchGoogleFlow;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
