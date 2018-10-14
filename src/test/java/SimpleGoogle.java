@@ -1,6 +1,6 @@
-import io.github.ingmargoudt.Browser;
-import io.github.ingmargoudt.BrowserName;
-import io.github.ingmargoudt.TestExecution;
+import io.github.ingmargoudt.marvel.Browser;
+import io.github.ingmargoudt.marvel.BrowserName;
+import io.github.ingmargoudt.marvel.TestExecution;
 import io.github.ingmargoudt.marveldemo.GoogleTestData;
 import io.github.ingmargoudt.marveldemo.flows.SearchGoogleFlow;
 import org.junit.jupiter.api.AfterEach;
@@ -13,7 +13,7 @@ public class SimpleGoogle extends TestExecution {
     @Test
     @Browser(BrowserName.CHROME)
     public void simpleGoogle() {
-        webDriver.get("https://google.com");
+        openURL("https://google.com");
         new SearchGoogleFlow(webDriver, googleTestData).run();
     }
 
