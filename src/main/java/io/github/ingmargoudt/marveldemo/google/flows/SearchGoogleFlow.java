@@ -1,10 +1,10 @@
-package io.github.ingmargoudt.marveldemo.flows;
+package io.github.ingmargoudt.marveldemo.google.flows;
 
 import io.github.ingmargoudt.marvel.Flow;
 import io.github.ingmargoudt.marvel.steps.Steps;
-import io.github.ingmargoudt.marveldemo.GoogleTestData;
-import io.github.ingmargoudt.marveldemo.steps.ResultPageSteps;
-import io.github.ingmargoudt.marveldemo.steps.SearchPageSteps;
+import io.github.ingmargoudt.marveldemo.google.GoogleTestData;
+import io.github.ingmargoudt.marveldemo.google.steps.ResultPageSteps;
+import io.github.ingmargoudt.marveldemo.google.steps.SearchPageSteps;
 import org.openqa.selenium.WebDriver;
 
 import static org.assertj.core.api.Assertions.assertThat;

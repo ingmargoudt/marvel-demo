@@ -1,4 +1,4 @@
-package io.github.ingmargoudt.marveldemo;
+package io.github.ingmargoudt.marveldemo.google;
 
 import lombok.Data;
 

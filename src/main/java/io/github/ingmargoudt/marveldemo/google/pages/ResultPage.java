@@ -1,4 +1,4 @@
-package io.github.ingmargoudt.marveldemo.pages;
+package io.github.ingmargoudt.marveldemo.google.pages;
 
 import io.github.ingmargoudt.marvel.programs.BaseProgram;
 import org.openqa.selenium.By;
