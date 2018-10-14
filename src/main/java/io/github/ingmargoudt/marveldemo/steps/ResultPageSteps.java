@@ -18,7 +18,6 @@ public class ResultPageSteps extends BaseSteps {
 
     @Step
     public String getAmountResults() {
-        String s = read(resultPage.getResultStats());
-        return s;
+        return read(resultPage.getResultStats());
     }
 }
