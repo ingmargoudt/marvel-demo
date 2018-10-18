@@ -4,6 +4,7 @@ import io.github.ingmargoudt.marvel.Browser;
 import io.github.ingmargoudt.marvel.BrowserName;
 import io.github.ingmargoudt.marvel.TestExecution;
 import io.github.ingmargoudt.marveldemo.the_internet_heroku.Flows.FormAuthenticationFlow;
+import io.github.ingmargoudt.marveldemo.the_internet_heroku.Flows.SecureAreaFlow;
 import org.junit.jupiter.api.Test;
 
 public class FormAuthentication extends TestExecution {
@@ -16,5 +17,7 @@ public class FormAuthentication extends TestExecution {
     public void testFormAuthentication(){
         openURL("https://the-internet.herokuapp.com/login");
         new FormAuthenticationFlow(webDriver).run();
+        new SecureAreaFlow(webDriver).run();
+        close();
     }
 }
