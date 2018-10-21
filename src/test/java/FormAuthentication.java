@@ -1,5 +1,3 @@
-package io.github.ingmargoudt.marveldemo.the_internet_heroku;
-
 import io.github.ingmargoudt.marvel.Browser;
 import io.github.ingmargoudt.marvel.BrowserName;
 import io.github.ingmargoudt.marvel.TestExecution;
