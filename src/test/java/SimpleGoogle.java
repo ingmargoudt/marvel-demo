@@ -22,9 +22,5 @@ public class SimpleGoogle extends TestExecution {
         googleTestData.setSearchPhrase("Zebra");
     }
 
-    @AfterEach
-    public void cooldown() {
-        close();
-    }
 
 }

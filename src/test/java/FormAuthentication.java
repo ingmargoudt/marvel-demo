@@ -16,6 +16,5 @@ public class FormAuthentication extends TestExecution {
         openURL("https://the-internet.herokuapp.com/login");
         new FormAuthenticationFlow(webDriver).run();
         new SecureAreaFlow(webDriver).run();
-        close();
     }
 }
