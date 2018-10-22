@@ -3,7 +3,6 @@ import io.github.ingmargoudt.marvel.BrowserName;
 import io.github.ingmargoudt.marvel.TestExecution;
 import io.github.ingmargoudt.marveldemo.google.GoogleTestData;
 import io.github.ingmargoudt.marveldemo.google.flows.SearchGoogleFlow;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
 public class SimpleGoogle extends TestExecution {
