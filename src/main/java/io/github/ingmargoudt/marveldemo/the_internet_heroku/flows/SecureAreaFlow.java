@@ -10,11 +10,12 @@ public class SecureAreaFlow extends Flow {
     @Steps
     SecureAreaSteps secureAreaSteps;
 
-    public SecureAreaFlow(WebDriver webDriver){
+    public SecureAreaFlow(WebDriver webDriver) {
         super(webDriver);
     }
+
     public void run() {
-secureAreaSteps.validateLoggedInMessage();
-secureAreaSteps.logout();
+        secureAreaSteps.validateLoggedInMessage();
+        secureAreaSteps.logout();
     }
 }
