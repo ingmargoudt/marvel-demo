@@ -8,23 +8,47 @@
     <artifactId>marvel-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+        <junit-jupiter-api.version>5.1.0</junit-jupiter-api.version>
+        <junit-platform-engine.version>1.3.1</junit-platform-engine.version>
+        <junit-jupiter-engine.version>5.1.0</junit-jupiter-engine.version>
+        <maven-surefire.version>2.22.0</maven-surefire.version>
+        <java.version>1.8</java.version>
+
+        <marvel.version>1.0-SNAPSHOT</marvel.version>
+    </properties>
+
+    <name>Marvel Demo </name>
+    <description>A simple Test Automation toolkit for Selenium</description>
+
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/ingmargoudt/marvel-demo/issues</url>
+    </issueManagement>
+
     <dependencies>
         <dependency>
             <groupId>io.github.ingmargoudt</groupId>
             <artifactId>marvel</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${marvel.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.1.0</version>
+            <version>${junit-jupiter-api.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-engine -->
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-engine</artifactId>
-            <version>1.3.1</version>
+            <version>${junit-platform-engine.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit-jupiter-engine.version}</version>
         </dependency>
     </dependencies>
     <build>
@@ -32,22 +56,19 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.0</version>
+                <version>${maven-surefire.version}</version>
                 <configuration>
                     <includes>*.java</includes>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.junit.platform</groupId>
-                        <artifactId>junit-platform-surefire-provider</artifactId>
-                        <version>1.3.0</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.junit.jupiter</groupId>
-                        <artifactId>junit-jupiter-engine</artifactId>
-                        <version>5.1.0</version>
-                    </dependency>
-                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+                <version>${maven-compiler-plugin.version}</version>
             </plugin>
         </plugins>
     </build>
