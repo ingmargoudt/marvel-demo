@@ -22,11 +22,12 @@ public class SearchPageSteps extends BaseSteps {
     @Step
     public void enterKeyword(String keyword) {
         write(searchPage.getSearchBox(), keyword);
-        sendKeys(searchPage.getSearchButton(), Keys.ESCAPE);
+        sendKeys(searchPage.getSearchBox(), Keys.ESCAPE);
+        sendKeys(searchPage.getSearchBox(), Keys.ENTER);
     }
 
     @Step
     public void clickOnSearch() {
-        clickAndClose(searchPage.getSearchButton());
+        clickOn(searchPage.getSearchButton());
     }
 }

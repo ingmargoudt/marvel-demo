@@ -26,7 +26,7 @@ public class SearchGoogleFlow extends Flow {
 
     public void run() {
         searchPageSteps.enterKeyword(googleTestData.getSearchPhrase());
-        searchPageSteps.clickOnSearch();
+      //  searchPageSteps.clickOnSearch();
         String numResults = resultPageSteps.getAmountResults();
         assertThat(numResults).as("There is not text in the result stats field").isNotEmpty();
 

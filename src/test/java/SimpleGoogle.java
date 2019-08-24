@@ -5,6 +5,8 @@ import io.github.ingmargoudt.marveldemo.google.GoogleTestData;
 import io.github.ingmargoudt.marveldemo.google.flows.SearchGoogleFlow;
 import org.junit.jupiter.api.Test;
 
+import java.lang.reflect.Method;
+
 public class SimpleGoogle extends TestExecution {
 
     GoogleTestData googleTestData;
@@ -15,6 +17,7 @@ public class SimpleGoogle extends TestExecution {
         openURL("https://google.com");
         new SearchGoogleFlow(webDriver, googleTestData).run();
     }
+
 
     public void prepareTestData() {
         googleTestData = new GoogleTestData();
